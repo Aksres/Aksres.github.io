@@ -1,31 +1,79 @@
-extends ./_layout.pug
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="Aksres 的小站                            与&amp;nbsp;     cungduafa&amp;nbsp;     （          真（ま）白（しろ）          ）          对话中...                            bot_ui_ini()">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://aksres.github.io/about/index.html">
+<meta property="og:site_name" content="Aksres&#39;s blog">
+<meta property="og:description" content="Aksres 的小站                            与&amp;nbsp;     cungduafa&amp;nbsp;     （          真（ま）白（しろ）          ）          对话中...                            bot_ui_ini()">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/13q909h1.png">
+<meta property="article:published_time" content="2020-02-12T14:14:36.000Z">
+<meta property="article:modified_time" content="2021-02-19T05:56:21.311Z">
+<meta property="article:author" content="Aksres">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/image_hosting/13q909h1.png"><title>about | Aksres's blog</title><link ref="canonical" href="https://aksres.github.io/about/index.html"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
 
-block content
-  include ./_mixins/gallery.pug
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.0.2"><link rel="alternate" href="/atom.xml" title="Aksres's blog" type="application/atom+xml">
+</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Aksres's blog</div><div class="header-banner-info__subtitle">Dream-Wind Fly</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><div class="custompage"><div class="gallery"><img src="/h"><img src="/t"><img src="/t"><img src="/p"><img src="/s"><img src="/:"><img src="/"><img src="/"><img src="/c"><img src="/d"><img src="/n"><img src="/."><img src="/l"><img src="/u"><img src="/o"><img src="/g"><img src="/u"><img src="/."><img src="/c"><img src="/o"><img src="/m"><img src="/."><img src="/c"><img src="/n"><img src="/"><img src="/u"><img src="/p"><img src="/l"><img src="/o"><img src="/a"><img src="/d"><img src="/"><img src="/i"><img src="/m"><img src="/a"><img src="/g"><img src="/e"><img src="/_"><img src="/h"><img src="/o"><img src="/s"><img src="/t"><img src="/i"><img src="/n"><img src="/g"><img src="/"><img src="/1"><img src="/3"><img src="/q"><img src="/9"><img src="/0"><img src="/9"><img src="/h"><img src="/1"><img src="/."><img src="/p"><img src="/n"><img src="/g"></div><!-- https://www.bootcdn.cn/botui/ -->
+<link href="https://cdn.bootcss.com/botui/0.3.9/botui-theme-default.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/botui/0.3.9/botui.min.css" rel="stylesheet">
 
-  if page.type === 'tags'
-    div.tagcloud
-      div.tagcloud-total= __('page.tags') + ' - '
-        span= site.tags.length
-      - var min_font = theme.tag_cloud ? theme.tag_cloud.min_size : 14;
-      - var max_font = theme.tag_cloud ? theme.tag_cloud.max_size : 24;
-      - var start_color = theme.tag_cloud ? theme.tag_cloud.start_color : '#a4d8fa';
-      - var end_color = theme.tag_cloud ? theme.tag_cloud.end_color : '#1b9ef3';
-      div.tagcloud-item
-        != tagcloud({min_font: min_font, max_font: max_font, amount: theme.tag_cloud.max_amount, color: true, start_color, end_color})
-  else if page.type === 'categories'
-    div.category
-      div.category-total= __('page.categories') + ' - '
-        span= site.categories.length
-      != list_categories()
-  else
-    div.custompage
-      if page.photos && page.photos.length
-        +gallery(page)
-      != page.content
 
-  if isShowReward
-    include ./_partials/widgets/reward.pug
-
-  if isShowCC
-    include ./_partials/widgets/copyright.pug
+<!-- 因为vue和botui更新导至bug,现将对话移至js下的botui中配置 -->
+<div class="entry-content">
+  <div class="moe-cungudafa" style="text-align:center; font-size: 50px; margin-bottom: 20px;">Aksres 的小站</div>
+  <div id="hello-cungudafa" class="popcontainer" style="min-height: 300px; padding: 2px 6px 4px; background-color: rgb(36, 200, 255); border-radius: 10px;">
+    <center>
+    <p>
+    </p>
+    <h4>
+    与&nbsp;<ruby>
+    cungduafa&nbsp;<rp>
+    （</rp>
+    <rt>
+    真（ま）白（しろ）</rt>
+    <rp>
+    ）</rp>
+    </ruby>
+    对话中...</h4>
+    <p>
+    </p>
+    </center>
+    <bot-ui></botui>
+  </div>
+</div>
+<script src="/js/botui.js"></script>
+<script>
+ bot_ui_ini()
+</script>
+</div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#hello-cungudafa"><span class="toc-number">1.</span> <span class="toc-text">
+    与&amp;nbsp;
+    cungduafa&amp;nbsp;
+    （
+    
+    真（ま）白（しろ）
+    
+    ）
+    
+    对话中...</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://cdn.luogu.com.cn/upload/image_hosting/jizglc6j.png" alt="avatar"></div><p class="sidebar-ov-author__text">与其因为不信任而后悔，不如因为相信而后悔。</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">归档</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020~2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Aksres</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.0.2</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>
