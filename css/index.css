@@ -681,7 +681,7 @@ body::after {
 }
 .content-wrap {
   width: calc(100% - 330px);
-  float: left;
+  float: right;
 }
 .content-wrap--noside {
   float: none;
@@ -986,7 +986,7 @@ body::after {
 }
 .sidebar-wrap {
   width: 300px;
-  float: right;
+  float: left;
 }
 .sidebar-nav {
   padding-bottom: 1em;
@@ -1987,13 +1987,13 @@ body::after {
   left: 0;
 }
 .mode-track-moon::before {
-  content: '🌜';
+  content: 'd';
 }
 .mode-track-sun {
   right: 0;
 }
 .mode-track-sun::before {
-  content: '🌞';
+  content: 'l';
 }
 .mode-thumb {
   position: absolute;
@@ -2115,7 +2115,7 @@ body::after {
   border-radius: 5px;
   padding: 1rem 2rem;
   background-color: var(--color-card);
-  float: left;
+  float: right;
 }
 .copy-button {
   position: absolute;
